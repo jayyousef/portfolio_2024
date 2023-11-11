@@ -1,0 +1,197 @@
+/*--------------------------------------------------------------
+  16. Dark Mode
+----------------------------------------------------------------*/
+.cs_dark {
+  color: $ternary;
+  background-color: $primary;
+  a:hover,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .cs_nav,
+  .cs_primary_color,
+  .cs_swiper_navigation.cs_style_1 > *:hover,
+  .cs_site_header.cs_style1 .cs_icon_btn,
+  .cs_swiper_navigation.cs_style_3 .swiper-pagination-bullet,
+  .cs_testimonial.cs_style_1 .cs_testimonial_icon,
+  .cs_btn.cs_style_2,
+  .cs_post_details_btns {
+    color: $white;
+  }
+  .cs_preloader_wrap,
+  .cs_preloader_percentage_wrapper,
+  .cs_preloader_hold_progress_bar {
+    background: $primary;
+  }
+  .cs_preloader_percentage {
+    color: #fff;
+  }
+  .cs_preloader_trackbar {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .cs_preloader_loadbar {
+    background: #fff;
+  }
+
+  .cs_btn.cs_style_1 {
+    color: $primary;
+    background-color: $white;
+  }
+  .cs_pagination.cs_style_1 .swiper-pagination-bullet {
+    background-color: $white;
+    &.swiper-pagination-bullet-active {
+      background-color: $ternary;
+    }
+  }
+  .cs_post.cs_style_1,
+  .cs_bottom_footer,
+  .cs_section_heading.cs_style_2.cs_type_1,
+  .cs_author_card,
+  .cs_partner,
+  .cs_post_details_btns {
+    border-color: #5a5959;
+  }
+  .cs_swiper_navigation.cs_style_3 .swiper-pagination-bullet {
+    border-color: #5a595929;
+    border-right: 0;
+  }
+  .cs_swiper_navigation.cs_style_3
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #5a595929;
+  }
+  .cs_social_btns ul a,
+  .cs_round_btn,
+  .cs_btn.cs_style_2 {
+    border-color: #fff;
+  }
+  .cs_footer {
+    background-color: #000;
+  }
+  .cs_primary_bg,
+  .cs_gescout_sticky,
+  .cs_nav .cs_nav_list ul {
+    background-color: #000;
+  }
+  .cs_section_heading.cs_style_4 .cs_section_title,
+  .cs_portfolio.cs_style_3 .cs_portfolio_title_2 {
+    -webkit-text-stroke-color: $white;
+  }
+  .cs_portfolio.cs_style_3 .cs_portfolio_title_2 {
+    text-shadow: 0 0 transparent;
+  }
+  .cs_white_bg {
+    background-color: $primary;
+  }
+  .cs_text_heading.cs_style_1 {
+    color: $ternary;
+  }
+  .cs_round_btn {
+    &:hover {
+      color: $primary;
+    }
+    span {
+      background-color: #fff;
+    }
+  }
+  .cs_slider_6 .cs_slider_6_shape,
+  .cs_pagination.cs_style_2
+    .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+    background-color: #fff;
+  }
+  .cs_search_input {
+    background-color: transparent;
+    border-color: #5a5959;
+    color: #fff;
+    &:focus {
+      border-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+  .cs_search_btn {
+    &:hover {
+      color: #fff;
+    }
+  }
+  .cs_form_field {
+    border-color: rgba(255, 255, 255, 0.7);
+    color: #fff;
+    &:focus {
+      border-color: #fff;
+    }
+  }
+  .cs_tags .ca_tag {
+    &:hover {
+      background-color: #fff;
+      color: $primary;
+    }
+  }
+  .cs_btn.cs_style_2 {
+    &:hover {
+      background-color: $white;
+      color: $primary;
+      border-color: $white;
+    }
+  }
+  .cs_marquee_text_wrap {
+    -webkit-text-stroke-color: $white;
+  }
+
+  .bubble {
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px $primary;
+    opacity: 0.15;
+  }
+  .cs_post_meta.cs_style_1 {
+    color: $ternary;
+    .cs_posted_by {
+      color: $secondary;
+    }
+  }
+  .cs_swiper_navigation.cs_style_2,
+  .cs_menu_toggle {
+    color: #fff;
+  }
+  .cs_pagination.cs_style_2 .swiper-pagination-bullet {
+    border-color: #fff;
+  }
+  .cs_hero.cs_style_3 .cs_hero_shape {
+    background-color: rgba(90, 89, 89, 0.1);
+  }
+  .cs_post_details blockquote {
+    background-color: #000;
+  }
+
+  @media (max-width: 1199px) {
+    .cs_nav .cs_nav_list {
+      background-color: #000;
+      color: #fff;
+    }
+    .cs_munu_dropdown_toggle span:before,
+    .cs_munu_dropdown_toggle span:after {
+      background-color: #fff;
+    }
+  }
+  @media (max-width: 991px) {
+    .cs_hero.cs_style_1 .cs_hero_subtitle {
+      color: rgba($white, 0.65);
+    }
+  }
+  @media (max-width: 767px) {
+    .cs_swiper_navigation.cs_style_3 {
+      background-color: $primary;
+      .swiper-pagination-bullet {
+        border-color: transparent;
+        background-color: rgb(255 253 253 / 15%);
+      }
+      .swiper-pagination-bullet-active {
+        &.swiper-pagination-bullet {
+          background-color: rgb(254 254 254 / 49%);
+        }
+        .cs_swiper_bullet_text {
+          background-color: rgba($primary, 0.5);
+        }
+      }
+    }
+  }
+}

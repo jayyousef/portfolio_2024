@@ -1,0 +1,51 @@
+/*--------------------------------------------------------------
+  14. Testimonial
+----------------------------------------------------------------*/
+.cs_testimonial.cs_style_1 {
+  padding: 0 60px;
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+  .cs_testimonial_icon {
+    margin-bottom: 63px;
+    color: $primary;
+    @media (max-width: 991px) {
+      margin-bottom: 30px;
+    }
+  }
+  .cs_testimonial_text {
+    font-size: 32px;
+    line-height: 1.4em;
+    margin-bottom: 55px;
+    font-weight: 600;
+    @media (max-width: 1199px) {
+      font-size: 30px;
+    }
+    @media (max-width: 991px) {
+      font-size: 26px;
+      margin-bottom: 25px;
+    }
+    @media (max-width: 575px) {
+      font-size: 24px;
+    }
+  }
+  .cs_testimonial_info {
+    h3 {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      @media (max-width: 1199px) {
+        font-size: 30px;
+      }
+      @media (max-width: 991px) {
+        font-size: 26px;
+      }
+      @media (max-width: 575px) {
+        font-size: 24px;
+      }
+    }
+    p {
+      margin: 0;
+    }
+  }
+}

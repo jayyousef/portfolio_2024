@@ -1,0 +1,83 @@
+/*--------------------------------------------------------------
+  2. Preloader
+----------------------------------------------------------------*/
+.cs_preloader_wrap {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: $white;
+  z-index: 1200;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cs_preloader_percentage_wrapper {
+  position: relative;
+  background: $white;
+  min-width: 320px;
+  padding: 0 50px;
+  display: table;
+  margin: 0 auto;
+  z-index: 10;
+  @media (max-width: 991px) {
+    min-width: 160px;
+    padding: 0 20px;
+  }
+}
+
+.cs_preloader_percentage {
+  opacity: 1;
+  font-size: 160px;
+  line-height: 1em;
+  font-weight: 700;
+  color: $primary;
+  display: table;
+  margin: 0 auto;
+  @media (max-width: 991px) {
+    font-size: 80px;
+  }
+}
+
+.cs_preloader_trackbar {
+  width: calc(100% - 120px);
+  height: 2px;
+  margin-top: 0px;
+  position: absolute;
+  top: 50vh;
+  left: 60px;
+  right: auto;
+  opacity: 1;
+  background: rgba($primary, 0.1);
+  z-index: 1;
+}
+
+.cs_preloader_loadbar {
+  width: 0%;
+  height: 2px;
+  background: $primary;
+  position: relative;
+  margin: 0 auto;
+  display: table;
+  top: 0px;
+  left: auto;
+  right: auto;
+  overflow: hidden;
+}
+
+.cs_preloader_hold_progress_bar {
+  width: 0%;
+  height: 2px;
+  background: $white;
+  position: relative;
+  margin: 0 auto;
+  display: table;
+  top: 0px;
+  left: auto;
+  right: auto;
+  overflow: hidden;
+}

@@ -1,0 +1,422 @@
+/*--------------------------------------------------------------
+  5. Slider
+----------------------------------------------------------------*/
+
+.cs_slider {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.cs_slider_3 {
+  margin-top: -2px;
+  margin-bottom: -2px;
+  .swiper-wrapper {
+    padding-bottom: 2px;
+    padding-top: 2px;
+  }
+  .swiper-slide {
+    width: 424px;
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+  }
+}
+.cs_slider_5 {
+  position: relative;
+  height: 100%;
+  .swiper-slide,
+  .swiper-slide .container {
+    height: 100%;
+  }
+}
+/* ANIMATIONS */
+@keyframes animateBubble {
+  0% {
+    margin-top: 1000px;
+  }
+  100% {
+    margin-top: -100%;
+  }
+}
+.x1 {
+  animation: animateBubble 25s linear infinite,
+    sideWays 2s ease-in-out infinite alternate;
+  left: -5%;
+  top: 5%;
+  -webkit-transform: scale(0.6);
+  transform: scale(0.6);
+}
+
+.x2 {
+  animation: animateBubble 20s linear infinite,
+    sideWays 4s ease-in-out infinite alternate;
+  left: 5%;
+  top: 80%;
+  -webkit-transform: scale(0.4);
+  transform: scale(0.4);
+}
+
+.x3 {
+  animation: animateBubble 28s linear infinite,
+    sideWays 2s ease-in-out infinite alternate;
+  left: 10%;
+  top: 40%;
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.x4 {
+  animation: animateBubble 22s linear infinite,
+    sideWays 3s ease-in-out infinite alternate;
+  left: 20%;
+  top: 0;
+  -webkit-transform: scale(0.3);
+  transform: scale(0.3);
+}
+
+.x5 {
+  animation: animateBubble 29s linear infinite,
+    sideWays 4s ease-in-out infinite alternate;
+  left: 30%;
+  top: 50%;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.x6 {
+  animation: animateBubble 21s linear infinite,
+    sideWays 2s ease-in-out infinite alternate;
+  left: 50%;
+  top: 0;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.x7 {
+  animation: animateBubble 20s linear infinite,
+    sideWays 2s ease-in-out infinite alternate;
+  left: 65%;
+  top: 70%;
+  -webkit-transform: scale(0.4);
+  transform: scale(0.4);
+}
+
+.x8 {
+  animation: animateBubble 22s linear infinite,
+    sideWays 3s ease-in-out infinite alternate;
+  left: 80%;
+  top: 10%;
+  -webkit-transform: scale(0.3);
+  transform: scale(0.3);
+}
+
+.x9 {
+  animation: animateBubble 29s linear infinite,
+    sideWays 4s ease-in-out infinite alternate;
+  left: 90%;
+  top: 50%;
+  -webkit-transform: scale(0.6);
+  transform: scale(0.6);
+}
+
+.x10 {
+  animation: animateBubble 26s linear infinite,
+    sideWays 2s ease-in-out infinite alternate;
+  left: 80%;
+  top: 80%;
+  -webkit-transform: scale(0.3);
+  transform: scale(0.3);
+}
+
+/* OBJECTS */
+.bubble {
+  border-radius: 50%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px white;
+  height: 200px;
+  position: absolute;
+  width: 200px;
+  opacity: 0.1;
+}
+
+.bubble:after {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#00ffffff', GradientType=1);
+  border-radius: 50%;
+  box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+  content: '';
+  height: 180px;
+  left: 10px;
+  position: absolute;
+  width: 180px;
+}
+.cs_slider_6 {
+  position: relative;
+  .cs_slider_6_shape {
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    min-width: 300px;
+    background-color: $primary;
+    overflow: hidden;
+    @media (max-width: 575px) {
+      min-width: 50%;
+    }
+  }
+  @media (max-width: 991px) {
+    .cs_pagination.cs_style_2 {
+      .swiper-pagination-bullet {
+        border-color: #fff;
+        &.swiper-pagination-bullet-active::before {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+.cs_swiper_navigation.cs_style_1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  @media (max-width: 575px) {
+    margin-top: 40px;
+  }
+  > * {
+    position: relative;
+    color: $ternary;
+    transition: all 0.4s ease;
+    &:hover {
+      color: $primary;
+    }
+    &:not(:last-child) {
+      padding-right: 25px;
+      margin-right: 25px;
+      border-right: 1px solid $secondary;
+    }
+  }
+}
+.cs_swiper_navigation.cs_style_2 {
+  color: $primary;
+  .cs_swiper_prev,
+  .cs_swiper_next {
+    position: absolute;
+    bottom: 35px;
+    z-index: 11;
+    @media (max-width: 575px) {
+      bottom: 15px;
+    }
+  }
+  .cs_swiper_prev {
+    left: 100px;
+    &.cs_animated_class {
+      animation: moving2 1s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    @media (max-width: 1199px) {
+      left: 15px;
+    }
+  }
+  .cs_swiper_next {
+    right: 100px;
+    &.cs_animated_class {
+      animation: moving 1s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    @media (max-width: 1199px) {
+      right: 15px;
+    }
+  }
+}
+.cs_swiper_navigation_3_wrap {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  z-index: 2;
+  @media (max-width: 767px) {
+    height: initial;
+    top: initial;
+    bottom: 0;
+  }
+}
+.cs_swiper_navigation.cs_style_3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  z-index: 2;
+  height: 100%;
+  overflow: auto;
+  transform: initial;
+  @media (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    top: initial;
+    bottom: 0;
+    position: initial;
+    width: initial;
+    height: initial;
+    background-color: #fff;
+    padding: 5px 0 0;
+  }
+  .swiper-pagination-bullet {
+    height: initial;
+    width: initial;
+    border-radius: 0;
+    display: block;
+    background-color: transparent;
+    opacity: 1;
+    margin: 0 0 25px 0;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2em;
+    padding: 19px 25px;
+    border: 1px solid rgba($ternary, 0.3);
+    color: $primary;
+    transition: all 0.4s ease;
+    &.swiper-pagination-bullet-active {
+      background-color: rgba($ternary, 0.2);
+    }
+    @media (max-width: 1400px) {
+      font-size: 24px;
+      padding: 15px 15px;
+      margin: 0 0 15px 0;
+    }
+    @media (max-width: 767px) {
+      height: 16px;
+      width: 16px;
+      padding: 0;
+      border-radius: 50%;
+      margin: 3px;
+      border-color: $ternary;
+      &.swiper-pagination-bullet-active {
+        background-color: $ternary;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .cs_swiper_bullet_text {
+      display: none;
+    }
+    .swiper-pagination-bullet-active {
+      .cs_swiper_bullet_text {
+        display: block;
+        position: fixed;
+        bottom: 27px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.45);
+        padding: 10px 10px;
+        font-size: 18px;
+        line-height: 1.2em;
+        backdrop-filter: saturate(180%) blur(20px);
+      }
+    }
+  }
+}
+@keyframes moving {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes moving2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.cs_pagination.cs_style_1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  .swiper-pagination-bullet {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: $primary;
+    opacity: 1;
+    &.swiper-pagination-bullet-active {
+      background-color: $ternary;
+    }
+  }
+  @media (max-width: 991px) {
+    margin-top: 12px;
+  }
+}
+.cs_pagination.cs_style_2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 100px;
+  left: initial;
+  z-index: 2;
+  bottom: initial;
+  width: initial;
+  @media (max-width: 1199px) {
+    top: initial;
+    bottom: 22px;
+    right: initial;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+  }
+  @media (max-width: 991px) {
+    bottom: 30px;
+  }
+
+  .swiper-pagination-bullet {
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    border: 1px solid $primary;
+    border-radius: 50%;
+    margin: 5px 0px !important;
+    cursor: pointer;
+    position: relative;
+    opacity: 1;
+    transition: all 0.3s ease;
+    @media (max-width: 1199px) {
+      margin: 0px 5px !important;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: transparent;
+    }
+
+    &.swiper-pagination-bullet-active {
+      background-color: transparent;
+      &::before {
+        background-color: $primary;
+      }
+    }
+  }
+}

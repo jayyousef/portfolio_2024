@@ -1,0 +1,56 @@
+/*--------------------------------------------------------------
+  13. CTA
+----------------------------------------------------------------*/
+.cs_cta.cs_style_1 {
+  .cs_cta_title {
+    font-size: 64px;
+    line-height: 1.25em;
+    margin-bottom: 33px;
+    @media (max-width: 1199px) {
+      font-size: 52px;
+    }
+    @media (max-width: 991px) {
+      font-size: 40px;
+      margin-bottom: 25px;
+      br {
+        display: none;
+      }
+    }
+    @media (max-width: 380px) {
+      font-size: 36px;
+    }
+  }
+}
+.cs_cta.cs_style_2 {
+  padding: 83px 20px 100px;
+  border-radius: 10px;
+  overflow: hidden;
+  @media (max-width: 991px) {
+    padding: 63px 20px 80px;
+  }
+  .cs_cta_title {
+    font-size: 64px;
+    color: #fff;
+    line-height: 1.25em;
+    margin-bottom: 60px;
+    @media (max-width: 1199px) {
+      font-size: 52px;
+    }
+    @media (max-width: 991px) {
+      font-size: 42px;
+      margin-bottom: 30px;
+    }
+    @media (max-width: 575px) {
+      br {
+        display: none;
+      }
+    }
+    span {
+      color: $ternary;
+    }
+  }
+  .cs_cta_in {
+    position: relative;
+    z-index: 3;
+  }
+}

@@ -1,0 +1,70 @@
+/*--------------------------------------------------------------
+  10. Sidebar
+----------------------------------------------------------------*/
+.cs-sidebar_item:not(:last-child) {
+  margin-bottom: 54px;
+}
+.cs-sidebar_widget_title {
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.widget_archive,
+.widget_categories {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      padding-left: 26px;
+      position: relative;
+      &::before {
+        content: '\f101';
+        font-weight: 900;
+        font-family: 'Font Awesome 6 Free';
+        position: absolute;
+        left: 0;
+        top: 1px;
+      }
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+.cs-recent_posts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  .cs-recent_post_title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 2px;
+    a {
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  li {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+}
+.tagcloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tag-cloud-link {
+  line-height: 1.6em;
+  border: 2px solid $secondary;
+  padding: 5px 13px;
+  display: inline-block;
+  border-radius: 2px;
+  &:hover {
+    background-color: $secondary;
+    color: #fff;
+  }
+}

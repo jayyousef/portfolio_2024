@@ -1,0 +1,42 @@
+/*--------------------------------------------------------------
+  10. Iconbox
+----------------------------------------------------------------*/
+.cs_iconbox.cs_style_1 {
+  @media (max-width: 575px) {
+    text-align: center;
+  }
+  .cs_iconbox_title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.4em;
+    margin-bottom: 18px;
+    @media (max-width: 1199px) {
+      font-size: 30px;
+    }
+    @media (max-width: 991px) {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+  }
+  .cs_iconbox_subtitle {
+    line-height: 1.88em;
+  }
+  .cs_iconbox_icon {
+    margin-bottom: 49px;
+    @media (max-width: 991px) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.cs_iconbox.cs_style_2 {
+  .cs_iconbox_icon {
+    margin-bottom: 90px;
+    @media (max-width: 991px) {
+      margin-bottom: 40px;
+    }
+  }
+  .cs_iconbox_text {
+    line-height: 1.88em;
+  }
+}

@@ -1,0 +1,70 @@
+/*--------------------------------------------------------------
+  12. Posts
+----------------------------------------------------------------*/
+.cs_post.cs_style_1 {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #b7b7b7;
+  border-radius: 10px;
+  padding: 30px 25px;
+  transition: all 0.4s ease;
+  > *:not(.cs_post_thumb) {
+    position: relative;
+    z-index: 2;
+  }
+  .cs_post_title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.4em;
+    margin-bottom: 18px;
+    a {
+      color: inherit;
+    }
+    @media (max-width: 1199px) {
+      font-size: 30px;
+    }
+    @media (max-width: 991px) {
+      font-size: 26px;
+    }
+  }
+  .cs_post_subtitle {
+    line-height: 1.88;
+  }
+  .cs_posted_by {
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+    span {
+      &:first-child {
+        font-weight: 600;
+        font-size: 46px;
+        margin-right: 7px;
+      }
+      &:last-child {
+        text-transform: uppercase;
+        line-height: 20px;
+        font-size: 14px;
+      }
+    }
+  }
+  .cs_post_thumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transform: scale(2);
+    transition: all 0.5s ease;
+  }
+  &:hover {
+    color: #b7b7b7;
+    .cs_post_title {
+      color: #fff;
+    }
+    .cs_post_thumb {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
